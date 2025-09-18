@@ -1,16 +1,23 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
+  const linkClass = ({ isActive }) =>
+    `nav__link${isActive ? " is-active" : ""}`;
+
   return (
     <header className="header">
-      <h1>חדשות רנדומליות</h1>
+      <div className="brand">
+        <div className="logo" aria-hidden />
+        <span>האתר שלי</span>
+      </div>
       <nav className="nav">
-        <a className="nav__link" href="#">
+        <NavLink to="/" className={linkClass}>
           דף הבית
-        </a>
-        <a className="nav__link" href="#">
+        </NavLink>
+        <NavLink to="/about" className={linkClass}>
           אודות
-        </a>
+        </NavLink>
         <a className="nav__link" href="#">
           צור קשר
         </a>

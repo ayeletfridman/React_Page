@@ -1,13 +1,7 @@
 import React from "react";
-import Header from "./components/Header.jsx";
-import Sidebar from "./components/Sidebar.jsx";
-import Content from "./components/Content.jsx";
-import Footer from "./components/Footer.jsx";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import About from "./pages/About.js";
-import Home from "./pages/Home.js";
+import Content from "../components/Content";
 
-export default function App() {
+export default function Home() {
   const title1 = "איך נולדים צבעים בזוהר הצפוני?";
   const text1 =
     " הזוהר הצפוני, או האורות הצפוניים, הם תופעה אטמוספירית מרהיבה הנגרמת על ידי אינטראקציה בין חלקיקים טעונים מהשמש לבין השדה המגנטי של כדור הארץ. כאשר חלקיקים אלו פוגעים באטמוספירה של כדור הארץ, הם מעוררים אטומים ומולקולות, מה שגורם להם לפלוט אור בצבעים שונים. הצבעים הנפוצים ביותר בזוהר הצפוני הם ירוק, אדום, כחול וסגול, כאשר הירוק הוא הנפוץ ביותר. צבעים אלו נוצרים על ידי סוגים שונים של אטומים ומולקולות באטמוספירה, כמו חמצן וחנקן, שמגיבים עם החלקיקים הטעונים. התופעה מתרחשת בעיקר באזורים הקרובים לקוטב הצפוני, כמו נורווגיה, שבדיה, פינלנד וקנדה, אך לעיתים רחוקות ניתן לראותה גם באזורים נמוכים יותר. הזוהר הצפוני הוא לא רק תופעה טבעית מרהיבה, אלא גם נושא למחקר מדעי חשוב, שכן הוא מספק תובנות על האינטראקציה בין השמש לכדור הארץ ועל השדה המגנטי של כדור הארץ. מעבר לכך, הזוהר הצפוני מהווה מוקד משיכה לתיירים ומטיילים מכל העולם, שמגיעים במיוחד כדי לחזות ביופיו המרהיב של הטבע.";
@@ -15,18 +9,9 @@ export default function App() {
   const text2 =
     "היסטוריונים מאמינים שמקור השוקולד הוא אצל בני המאיה והאצטקים, עוד לפני אלפי שנים. הם לא אכלו שוקולד כמו שאנחנו מכירים אותו היום, אלא שתו משקה מריר שהוכן מגרגרי קקאו טחונים עם תבלינים חריפים. האירופאים שהגיעו לעולם החדש במאה ה־16 הביאו את הקקאו ליבשת שלהם, הוסיפו סוכר וחלב – וכך נולד השוקולד המתוק שאנחנו מכירים ואוהבים כיום. מעניין לחשוב שממתק כל כך נפוץ התחיל בכלל כמשקה פולחני חריף!";
   return (
-    <Router>
-      <div className="page">
-        <Header />
-        <div className="main">
-          <Sidebar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-          </Routes>
-        </div>
-        <Footer />
-      </div>
-    </Router>
+    <>
+      <Content text={text1} title={title1} />
+      <Content text={text2} title={title2} />
+    </>
   );
 }
