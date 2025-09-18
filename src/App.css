@@ -145,3 +145,36 @@ p {
   margin-top: 8px;
   line-height: 1.4;
 }
+
+/* --- Contact minimal styles --- */
+.contact {
+  display: grid;
+  gap: 12px;
+  max-width: 560px;
+  margin: 16px auto 0;
+}
+
+.contact__controls {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-start;
+}
+
+.contact__value .card {
+  margin: 0;
+  text-align: center;
+}
+
+.btn {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #fff;
+  cursor: pointer;
+  transition: 0.18s ease;
+}
+.btn:hover {
+  border-color: var(--primary);
+  background: var(--primary-light);
+  color: var(--primary);
+}

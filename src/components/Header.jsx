@@ -18,9 +18,9 @@ export default function Header() {
         <NavLink to="/about" className={linkClass}>
           אודות
         </NavLink>
-        <a className="nav__link" href="#">
-          צור קשר
-        </a>
+        <NavLink to="/contact" className={linkClass}>
+          משחק
+        </NavLink>
       </nav>
     </header>
   );
