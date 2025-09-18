@@ -1,6 +1,6 @@
 import React from "react";
-import Contact from "../components/Contact.jsx";
-import Content from "../components/Content";
+import Contact from "../components/Game.jsx";
+import Content from "../components/Content.jsx";
 
 export default function ContactPage() {
   const title = "משחק ספירה";

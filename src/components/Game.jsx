@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CounterValue from "./CounterValue.jsx";
+import CounterValue from "./GameValue.jsx";
 
 export default function Contact() {
   const [count, setCount] = useState(0);
